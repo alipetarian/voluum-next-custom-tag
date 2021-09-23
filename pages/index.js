@@ -18,25 +18,26 @@ export default function Home() {
 
 
         <div>
-        <a href="/test">Simple Link</a><br/>
-        <a href="/test">Simple Link</a><br/>
-        <a href="/test">Simple Link</a><br/>
-        <a href="/test">Simple Link</a><br/>
+        <a href="/test-simple?test=ali-s1">Simple Link</a><br/>
+        <a href="/test-simple-2?test=ali-s2">Simple Link</a><br/>
+        <a href="https://www.google-simple.com.pk?test=ali-s3&test-cep=hard-coded-cep">Simple Link</a><br/>
+        <a href="https://morosoft-simple.org?test=ali-s4&test-cep=hard-coded-cep">Simple Link</a><br/>
         </div>
 
         <div className="next-links">
-          <Link href="/test"><a>Next Link</a></Link><br/>
-          <Link href="/test"><a>Next Link</a></Link><br/>
-          <Link href="/test"><a>Next Link</a></Link><br/>
-          <Link href="/test"><a>Next Link</a></Link><br/>
-          <Link href="/test"><a>Next Link</a></Link><br/>
+          <Link href="/test-next?test=ali-n1&test-cep=hard-coded-cep"><a>Next Link</a></Link><br/>
+          <Link href="/test-next-2?test=ali-n2&test-cep=hard-coded-cep"><a>Next Link</a></Link><br/>
+          <Link href="/test-next-2?tes-2=ali-n2&test-cep=hard-coded-cep" shallow><a>Next Link- Shallow</a></Link><br/>
+          {/* <Link href="https://www.google.com.pk"><a>Next Link</a></Link><br/>
+          <Link href="https://morosoft.org"><a>Next Link</a></Link><br/> */}
+          
         </div>
         
       </main>
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app&test-cep=hard-coded-cep"
           target="_blank"
           rel="noopener noreferrer"
         >
