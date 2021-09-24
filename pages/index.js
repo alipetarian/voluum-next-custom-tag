@@ -25,7 +25,11 @@ export default function Home() {
         </div>
 
         <div className="next-links">
-          <Link href="/test-next?test=ali-n1&test-cep=hard-coded-cep"><a>Next Link</a></Link><br/>
+        <Link href="/test"><a>Next Link -test</a></Link><br/>
+        <Link href="/test?test-query=sdfdf"><a>Next Link -test-query</a></Link><br/>
+        <Link href={{pathname:"/test",query:{test90:"some-value-sdfdf"}}}><a>Next Link -test-query-obj</a></Link><br/>
+        <Link href="/test-undefined"><a>Next Link -test-undefined</a></Link><br/>
+          <Link href="/test?test=ali-n1&test-cep=hard-coded-cep"><a>Next Link</a></Link><br/>
           <Link href="/test-next-2?test=ali-n2&test-cep=hard-coded-cep"><a>Next Link</a></Link><br/>
           <Link href="/test-next-2?tes-2=ali-n2&test-cep=hard-coded-cep" shallow><a>Next Link- Shallow</a></Link><br/>
           {/* <Link href="https://www.google.com.pk"><a>Next Link</a></Link><br/>
