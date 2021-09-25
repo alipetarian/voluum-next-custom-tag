@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,27 +16,48 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-
         <div>
-        <a href="/test-simple?test=ali-s1">Simple Link</a><br/>
-        <a href="/test-simple-2?test=ali-s2">Simple Link</a><br/>
-        <a href="https://www.google-simple.com.pk?test=ali-s3&test-cep=hard-coded-cep">Simple Link</a><br/>
-        <a href="https://morosoft-simple.org?test=ali-s4&test-cep=hard-coded-cep">Simple Link</a><br/>
+          <a href="/test-simple?test=ali-s1">Simple Link</a>
+          <br />
+          <a href="/test-simple-2?test=ali-s2">Simple Link</a>
+          <br />
         </div>
 
         <div className="next-links">
-        <Link href="/test"><a>Next Link -test</a></Link><br/>
-        <Link href="/test?test-query=sdfdf"><a>Next Link -test-query</a></Link><br/>
-        <Link href={{pathname:"/test",query:{test90:"some-value-sdfdf"}}}><a>Next Link -test-query-obj</a></Link><br/>
-        <Link href="/test-undefined"><a>Next Link -test-undefined</a></Link><br/>
-          <Link href="/test?test=ali-n1&test-cep=hard-coded-cep"><a>Next Link</a></Link><br/>
-          <Link href="/test-next-2?test=ali-n2&test-cep=hard-coded-cep"><a>Next Link</a></Link><br/>
-          <Link href="/test-next-2?tes-2=ali-n2&test-cep=hard-coded-cep" shallow><a>Next Link- Shallow</a></Link><br/>
-          {/* <Link href="https://www.google.com.pk"><a>Next Link</a></Link><br/>
-          <Link href="https://morosoft.org"><a>Next Link</a></Link><br/> */}
-          
+          <Link href="/test">
+            <a>Next Link -test</a>
+          </Link>
+          <br />
+          <Link href="/test?test-query=sdfdf">
+            <a>Next Link -test-query</a>
+          </Link>
+          <br />
+          <Link
+            href={{ pathname: "/test", query: { test90: "some-value-sdfdf" } }}
+          >
+            <a>Next Link -test-query-obj</a>
+          </Link>
+          <br />
+          <Link href="/test-undefined">
+            <a>Next Link -test-undefined</a>
+          </Link>
+          <br />
+          <Link href="/test?test=ali-n1&test-cep=hard-coded-cep">
+            <a>Next Link</a>
+          </Link>
+          <br />
+          <Link href="/test-next-2?test=ali-n2&test-cep=hard-coded-cep">
+            <a>Next Link</a>
+          </Link>
+          <br />
+          <Link
+            href="/test-next-2?tes-2=ali-n2&test-cep=hard-coded-cep"
+            shallow
+          >
+            <a>Next Link- Shallow</a>
+          </Link>
+          <br />
         </div>
-        
       </main>
 
       <footer className={styles.footer}>
@@ -44,10 +65,8 @@ export default function Home() {
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app&test-cep=hard-coded-cep"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          
-        </a>
+        ></a>
       </footer>
     </div>
-  )
+  );
 }
