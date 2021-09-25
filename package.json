@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "clean": "rm -rf .next",
     "start": "next start"
   },
   "author": "",

@@ -12,9 +12,31 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+
+        <Link
+          href="/credit-card-category/top-rated"
+        >
+          <a>Category - top-ratedd</a>
+        </Link>
+
+        <Link
+          href="/credit-card-category/top-rated-without-as"
+        >
+          <a>Category - top-ratedd -without as</a>
+        </Link>
+
+        <br />
+
+        <Link
+          href="/credit-card-issuer/[...slug]"
+          as="/credit-card-issuer/chase"
+        >
+          <a>Category - chase</a>
+        </Link>
+
+        <br />
+          <br />
+          <br />
 
         <div>
           <a href="/test-simple?test=ali-s1">Simple Link</a>
@@ -57,6 +79,9 @@ export default function Home() {
             <a>Next Link- Shallow</a>
           </Link>
           <br />
+
+
+          
         </div>
       </main>
 
