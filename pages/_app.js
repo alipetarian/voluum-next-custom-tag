@@ -3,6 +3,43 @@ import { useRouter } from "next/router";
 import queryString from "query-string";
 
 const App = ({ Component, pageProps }) => {
+  const router = useRouter();
+
+  // useEffect(() => {
+  //   console.log("SETUP", router.query, router.asPath);
+
+  //   const handleRouteChange = async (url) => {
+  //     const basePath = (url || "").split(/\?/)?.[0] || "";
+  //     const queryParams = (url || "").split(/\?/)?.[1] || "";
+  //     console.log("route change", { url, basePath, queryParams });
+
+  //     if (!basePath) return;
+
+  //     const query = queryString.parse(queryParams);
+
+  //     if (!query.code2test) {
+  //       const newUrl = `${basePath}?${queryString.stringify({
+  //         ...query,
+  //         code2test: "ali-here",
+  //       })}`;
+
+  //       console.log("here", { url, basePath, queryParams, newUrl });
+
+  //       router.replace(newUrl, newUrl, { shallow: true });
+
+  //       throw "don't";
+  //     }
+
+  //     return true;
+  //   };
+
+  //   // on initial page load.
+  //   handleRouteChange(router?.asPath || "");
+
+  //   router.events.on("routeChangeStart", handleRouteChange);
+  //   return () => router.events.off("routeChangeStart", handleRouteChange);
+  // }, []);
+
   return <Component {...pageProps} />;
 };
 
